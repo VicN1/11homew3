@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+}
+
+.material-symbols-outlined.search {
+    color: rgb(160, 160, 160);
+}
+
+a {
+    color: white;
+}
+
+form {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+button {
+    border: none;
+    background-color: white;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+input {
+    outline: none;
+    border: none;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.logo {
+    color: white;
+    font-size: 30px;
+}
+
+header {
+    padding: 35px;
+    width: 100%;
+    background: url(./img1.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    gap: 35px;
+}
+
+input::placeholder {
+    color: rgb(150, 150, 150);
+}
+
+.material-symbols-outlined.search {
+    color: rgb(150, 150, 150);
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+header .container section p {
+    color: white;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+header .container section {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.btn {
+    padding: 10px 20px;
+    width: fit-content;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #76B900;
+    color: black;
+    transition: all .1s ease;
+}
+
+.btn:hover {
+    background-color: #5c9200;
+    color: white;
+}
+
+header .container section a:active {
+    background-color: #497400;
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 75px;
+    padding: 35px;
+}
+
+main .container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.sect {
+    width: 1280px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+}
+
+.sect p:nth-child(1) {
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.sec {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.shop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.2);
+    transition: all .2s ease;
+    gap: 18px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+}
+
+.shop:hover {
+    transform: scale(1.05);
+}
+
+.shop .tit {
+    width: 200px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.shop .now {
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+    width: 100px;
+    justify-content: center;
+}
+
+
+.material-symbols-outlined.arrow {
+    color: #75b9008d;
+    font-size: 18px;
+    position: absolute;
+    right: -8px;
+}
+
+.shop .now {
+    transition: all .3s ease;
+}
+
+.shop .now:hover .material-symbols-outlined.arrow {
+    animation-name: nowAnimation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.shop .now:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.cart {
+    width: 290px;
+    border-radius: 10px;
+}
+
+.NVIDIA {
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+}
+
+.comp {
+    width: 550px;
+    height: 275px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.nvidia {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+main .container section .nvidia .btn {
+    font-size: 20px;
+    padding: 12px 22px;
+    color: white;
+    transition: all .1s ease;
+    background-color: #619900;
+    font-weight: 500;
+}
+
+main .container section .nvidia .btn:hover {
+    color: black;
+    background-color: #76B900;
+    font-weight: bold;
+}
+
+main .container section .nvidia .btn:active {
+    color: black;
+    background-color:#5c9200; 
+}
+
+.nv {
+    font-size: 48px;
+    font-weight: 700;
+    color: #76B900;
+}
+
+.edu {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+.footer p {
+    color: gray;
+    font-weight: 700;
+}
+
+@keyframes nowAnimation {
+    0% {
+        right: -8px;
+        color: #75b9008d;
+    }
+    
+    25% {
+        right: -11.5px;
+        color: #76B900;
+    }
+
+    50% {
+        right: -15px;
+        color: transparent;
+    }
+
+    75% {
+        right: -8px;
+        color: transparent;
+    }
+
+    100% {
+        color: #75b9008d;
+        right: -8px;
+    }
+}
